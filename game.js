@@ -21,7 +21,7 @@ const buildings = [
       cost: { wood: 25 },
       graphic: "🌲",
       production: { wood: 1 },
-      description: "Produces 1 wood per second",
+      description: " 1 wood/s",
     },
   {
     count: 0,
@@ -31,7 +31,7 @@ const buildings = [
     cost: { wood: 50 },
     graphic: "🏠",
     production: { wood: -1, stone: 1 },
-    description: "Produces 1 stone per second",
+    description: "1 stone/s",
   },
   {
     count: 0,
@@ -41,7 +41,7 @@ const buildings = [
     cost: { wood: 100, stone: 50 },
     graphic: "⛏️",
     production: { stone: 2 },
-    description: "Produces 2 stone per second",
+    description: "2 stone/s",
   },
   {
     count: 0,
@@ -51,7 +51,7 @@ const buildings = [
     cost: { wood: 150, stone: 75 },
     graphic: "🌾",
     production: { food: 2 },
-    description: "Produces 2 food per second",
+    description: "2 food/s",
   },
   {
     count: 0,
@@ -61,7 +61,7 @@ const buildings = [
     cost: { wood: 200, stone: 100 },
     graphic: "🏞️",
     production: { stone: 3 },
-    description: "Produces 3 stone per second",
+    description: "3 stone /s",
   },
   {
     count: 0,
@@ -71,7 +71,7 @@ const buildings = [
     cost: { wood: 250, stone: 125 },
     graphic: "🔨",
     production: { iron: 2 },
-    description: "Produces 2 iron per second",
+    description: "2 iron /s",
   },
   {
     count: 0,
@@ -81,7 +81,7 @@ const buildings = [
     cost: { wood: 300, stone: 150 },
     graphic: "🏪",
     production: { gold: 2 },
-    description: "Produces 2 gold per second",
+    description: "2 gold /s",
   },
 ];
 
@@ -106,7 +106,7 @@ function updateGameDisplay() {
             if (count > 0) {
                 const resourceDisplay = document.createElement("div");
                 const emoji = getEmoji(resource);
-                resourceDisplay.textContent = `${emoji} - ${resource}: ${count.toFixed(2)} (${production.toFixed(2)} per second)`;
+                resourceDisplay.textContent = `${emoji} - ${resource}: ${count.toFixed(0)} (${production.toFixed(0)} per second)`;
                 resourceDisplay.id = `resource-${resource}`;
                 gameDisplay.appendChild(resourceDisplay);
             }}
