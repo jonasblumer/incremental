@@ -5,7 +5,7 @@ const buildingButtons = document.getElementById("building-buttons");
 
 // Resources
 const resources = {
-    wood: { count: 29, production: 0, isEnabled: false },
+    wood: { count: 0, production: 0, isEnabled: false },
     stone: { count: 0, production: 0, isEnabled: false },
     gold: { count: 0, production: 0, isEnabled: false },
     food: { count: 0, production: 0, isEnabled: false },
