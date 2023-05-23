@@ -31,7 +31,7 @@ const buildings = [
     cost: { wood: 50 },
     graphic: "🏠",
     production: { wood: -1, stone: 1 },
-    description: "1 stone/s",
+    description: "wood: -1, stone: 1 ",
   },
   {
     count: 0,
@@ -41,7 +41,7 @@ const buildings = [
     cost: { wood: 100, stone: 50 },
     graphic: "⛏️",
     production: { stone: 2 },
-    description: "2 stone/s",
+    description: "stone: 2",
   },
   {
     count: 0,
@@ -51,7 +51,7 @@ const buildings = [
     cost: { wood: 150, stone: 75 },
     graphic: "🌾",
     production: { food: 2 },
-    description: "2 food/s",
+    description: "food: 2",
   },
   {
     count: 0,
@@ -61,7 +61,7 @@ const buildings = [
     cost: { wood: 200, stone: 100 },
     graphic: "🏞️",
     production: { stone: 3 },
-    description: "3 stone /s",
+    description: "tone: 3",
   },
   {
     count: 0,
@@ -81,7 +81,7 @@ const buildings = [
     cost: { wood: 300, stone: 150 },
     graphic: "🏪",
     production: { gold: 2 },
-    description: "2 gold /s",
+    description: "gold: 2",
   },
 ];
 
