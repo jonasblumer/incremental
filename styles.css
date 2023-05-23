@@ -60,3 +60,7 @@ body {
   background-color: #ffffff;
   color: #333;
 }
+
+.touch-zoom-disable {
+  touch-action: manipulation;
+}

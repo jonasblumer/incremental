@@ -281,3 +281,23 @@ function getEmoji(id) {
 
 // Initial game display update
 updateGameDisplay();
+
+
+
+
+
+// Add a class to the body element to disable zoom on double-tap
+document.body.classList.add('touch-zoom-disable');
+
+// Listen for touchend events on the body element
+document.body.addEventListener('touchend', function(event) {
+  // Check if the touch event target is an input or textarea element
+  if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+    // Allow zooming for input and textarea elements
+    event.target.focus();
+  } else {
+    // Prevent zooming on double-tap for other elements
+    event.preventDefault();
+    event.target.click();
+  }
+});
